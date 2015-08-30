@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		801026FC1B29DF8E0011B33E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 801026FB1B29DF8E0011B33E /* main.m */; };
+		801026FF1B29DF8F0011B33E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 801026FE1B29DF8F0011B33E /* AppDelegate.m */; };
+		801027021B29DF8F0011B33E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 801027011B29DF8F0011B33E /* ViewController.m */; };
+		801027071B29DF8F0011B33E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 801027061B29DF8F0011B33E /* Images.xcassets */; };
+		8010270A1B29DF8F0011B33E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 801027081B29DF8F0011B33E /* LaunchScreen.xib */; };
+		801027161B29DF8F0011B33E /* WoW_TestYourProwessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 801027151B29DF8F0011B33E /* WoW_TestYourProwessTests.m */; };
+		801027211B29E8260011B33E /* ArrayCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 801027201B29E8260011B33E /* ArrayCreator.m */; };
+		801027261B29F3250011B33E /* CharacterInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 801027251B29F3250011B33E /* CharacterInformation.m */; };
+		801027291B29F47B0011B33E /* CharacterPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 801027281B29F47B0011B33E /* CharacterPageViewController.m */; };
+		801027351B2A10BB0011B33E /* StatsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 801027341B2A10BB0011B33E /* StatsTableViewController.m */; };
+		801027381B2A3DE60011B33E /* StatsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 801027371B2A3DE60011B33E /* StatsTableViewCell.m */; };
+		8010273A1B2A5C650011B33E /* wowFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = 801027391B2A5C650011B33E /* wowFrame.png */; };
+		802725E91B348132001A7996 /* Items.m in Sources */ = {isa = PBXBuildFile; fileRef = 802725E81B348132001A7996 /* Items.m */; };
+		802725EC1B348279001A7996 /* item.m in Sources */ = {isa = PBXBuildFile; fileRef = 802725EB1B348279001A7996 /* item.m */; };
+		802725F01B349782001A7996 /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 802725EF1B349782001A7996 /* ItemDetailViewController.m */; };
+		8040D6AC1B4AD5C700B80F58 /* OnlineChampionsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8040D6AB1B4AD5C700B80F58 /* OnlineChampionsTableViewCell.m */; };
+		8040D6AF1B4AD69400B80F58 /* NetworkedChampionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8040D6AE1B4AD69400B80F58 /* NetworkedChampionsTableViewController.m */; };
+		8040D6B11B4AD6DC00B80F58 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8040D6B01B4AD6DC00B80F58 /* MultipeerConnectivity.framework */; };
+		804342AF1B2B5BB1005BF974 /* FindFightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 804342AE1B2B5BB1005BF974 /* FindFightViewController.m */; };
+		804342B21B2B60C0005BF974 /* BattleInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 804342B11B2B60C0005BF974 /* BattleInformation.m */; };
+		8043437E1B2F1B92005BF974 /* worn-paper-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8043437D1B2F1B92005BF974 /* worn-paper-background.png */; };
+		804343881B2F39BA005BF974 /* bt3_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 804343851B2F39BA005BF974 /* bt3_active.png */; };
+		804343891B2F39BA005BF974 /* bt3_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 804343861B2F39BA005BF974 /* bt3_hover.png */; };
+		8043438A1B2F39BA005BF974 /* bt3_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 804343871B2F39BA005BF974 /* bt3_normal.png */; };
+		8043439B1B2F50DB005BF974 /* find_user-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 804343991B2F50DB005BF974 /* find_user-32.png */; };
+		8043439C1B2F50DB005BF974 /* moderator-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 8043439A1B2F50DB005BF974 /* moderator-32.png */; };
+		8043439E1B2F5146005BF974 /* user_male2-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 8043439D1B2F5146005BF974 /* user_male2-32.png */; };
+		804343A01B2F52C0005BF974 /* realmPicker.png in Resources */ = {isa = PBXBuildFile; fileRef = 8043439F1B2F52C0005BF974 /* realmPicker.png */; };
+		804343A31B2F5468005BF974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804343A11B2F5468005BF974 /* Main.storyboard */; };
+		804343A61B2F565D005BF974 /* BattleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 804343A51B2F565D005BF974 /* BattleViewController.m */; };
+		804343AA1B2F67BD005BF974 /* BlackFrameMask.png in Resources */ = {isa = PBXBuildFile; fileRef = 804343A91B2F67BD005BF974 /* BlackFrameMask.png */; };
+		804343AD1B2FB850005BF974 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 804343AC1B2FB850005BF974 /* LaunchViewController.m */; };
+		804343B51B312DF3005BF974 /* testyour.png in Resources */ = {isa = PBXBuildFile; fileRef = 804343B41B312DF3005BF974 /* testyour.png */; };
+		804343B91B313044005BF974 /* might.png in Resources */ = {isa = PBXBuildFile; fileRef = 804343B81B313044005BF974 /* might.png */; };
+		804343BF1B3134BB005BF974 /* splashWorldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 804343BE1B3134BB005BF974 /* splashWorldBG.png */; };
+		807B47251B31E92A006FEDA4 /* bt12_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 807B47241B31E92A006FEDA4 /* bt12_hover.png */; };
+		807B47271B31E934006FEDA4 /* bt10_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 807B47261B31E934006FEDA4 /* bt10_active.png */; };
+		807B472A1B333165006FEDA4 /* CombatText.m in Sources */ = {isa = PBXBuildFile; fileRef = 807B47291B333165006FEDA4 /* CombatText.m */; };
+		807B472D1B339B2D006FEDA4 /* StatGroupSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 807B472C1B339B2D006FEDA4 /* StatGroupSelectionView.m */; };
+		808A99771B2B4B310075DC76 /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 808A99761B2B4B310075DC76 /* mask.png */; };
+		808A99791B2B51E10075DC76 /* wowFrameFlipped.png in Resources */ = {isa = PBXBuildFile; fileRef = 808A99781B2B51E10075DC76 /* wowFrameFlipped.png */; };
+		808A997B1B2B53FE0075DC76 /* Ability_warrior_charge.png in Resources */ = {isa = PBXBuildFile; fileRef = 808A997A1B2B53FE0075DC76 /* Ability_warrior_charge.png */; };
+		808A997F1B2B55D20075DC76 /* Ability_warrior_chargeO.png in Resources */ = {isa = PBXBuildFile; fileRef = 808A997E1B2B55D20075DC76 /* Ability_warrior_chargeO.png */; };
+		80D06D781B3883140069ECB6 /* Page.wav in Resources */ = {isa = PBXBuildFile; fileRef = 80D06D761B3883140069ECB6 /* Page.wav */; };
+		80D06D791B3883140069ECB6 /* HitSFX.wav in Resources */ = {isa = PBXBuildFile; fileRef = 80D06D771B3883140069ECB6 /* HitSFX.wav */; };
+		80D06D7C1B38867F0069ECB6 /* clicked.wav in Resources */ = {isa = PBXBuildFile; fileRef = 80D06D7A1B38867F0069ECB6 /* clicked.wav */; };
+		80D06D7D1B38867F0069ECB6 /* Fatality.wav in Resources */ = {isa = PBXBuildFile; fileRef = 80D06D7B1B38867F0069ECB6 /* Fatality.wav */; };
+		80E2099B1B399D0D00A642DA /* medieval.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E2099A1B399D0D00A642DA /* medieval.png */; };
+		80E2099D1B399D1400A642DA /* creator.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E2099C1B399D1400A642DA /* creator.png */; };
+		80E2099F1B399D4600A642DA /* teamomega.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E2099E1B399D4600A642DA /* teamomega.png */; };
+		80E209A31B39B66300A642DA /* btn_101.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E209A01B39B66300A642DA /* btn_101.png */; };
+		80E209A41B39B66300A642DA /* btn_102.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E209A11B39B66300A642DA /* btn_102.png */; };
+		80E209A51B39B66300A642DA /* btn_103.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E209A21B39B66300A642DA /* btn_103.png */; };
+		80E209A71B39F66F00A642DA /* SpalshScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E209A61B39F66F00A642DA /* SpalshScreen.storyboard */; };
+		80E209AB1B3A01BE00A642DA /* SplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E209AA1B3A01BE00A642DA /* SplashScreenViewController.m */; };
+		80E209AE1B3A1A5400A642DA /* dead.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E209AC1B3A1A5400A642DA /* dead.png */; };
+		80E209AF1B3A1A5400A642DA /* dmg.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E209AD1B3A1A5400A642DA /* dmg.png */; };
+		80E209B11B3A1A5C00A642DA /* cracks.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E209B01B3A1A5C00A642DA /* cracks.png */; };
+		80E209B41B3AF54100A642DA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E209B31B3AF54100A642DA /* Reachability.m */; };
+		80E209B61B3B0FCE00A642DA /* Harlem Shake.wav in Resources */ = {isa = PBXBuildFile; fileRef = 80E209B51B3B0FCE00A642DA /* Harlem Shake.wav */; };
+		80E209BA1B3B2D7D00A642DA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E209B81B3B2D7D00A642DA /* icon.png */; };
+		80E209BB1B3B2D7D00A642DA /* icon87.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E209B91B3B2D7D00A642DA /* icon87.png */; };
+		80E209BE1B3B2DD200A642DA /* icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E209BC1B3B2DD200A642DA /* icon80.png */; };
+		80E209BF1B3B2DD200A642DA /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E209BD1B3B2DD200A642DA /* icon120.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		801027101B29DF8F0011B33E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 801026EE1B29DF8D0011B33E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 801026F51B29DF8D0011B33E;
+			remoteInfo = WoW_TestYourProwess;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		801026F61B29DF8D0011B33E /* WoW_TestYourProwess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoW_TestYourProwess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		801026FA1B29DF8E0011B33E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		801026FB1B29DF8E0011B33E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		801026FD1B29DF8E0011B33E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		801026FE1B29DF8F0011B33E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		801027001B29DF8F0011B33E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		801027011B29DF8F0011B33E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		801027061B29DF8F0011B33E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		801027091B29DF8F0011B33E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8010270F1B29DF8F0011B33E /* WoW_TestYourProwessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoW_TestYourProwessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		801027141B29DF8F0011B33E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		801027151B29DF8F0011B33E /* WoW_TestYourProwessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WoW_TestYourProwessTests.m; sourceTree = "<group>"; };
+		8010271F1B29E8260011B33E /* ArrayCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayCreator.h; sourceTree = "<group>"; };
+		801027201B29E8260011B33E /* ArrayCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayCreator.m; sourceTree = "<group>"; };
+		801027241B29F3250011B33E /* CharacterInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterInformation.h; sourceTree = "<group>"; };
+		801027251B29F3250011B33E /* CharacterInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterInformation.m; sourceTree = "<group>"; };
+		801027271B29F47B0011B33E /* CharacterPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterPageViewController.h; sourceTree = "<group>"; };
+		801027281B29F47B0011B33E /* CharacterPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterPageViewController.m; sourceTree = "<group>"; };
+		801027331B2A10BB0011B33E /* StatsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsTableViewController.h; sourceTree = "<group>"; };
+		801027341B2A10BB0011B33E /* StatsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsTableViewController.m; sourceTree = "<group>"; };
+		801027361B2A3DE60011B33E /* StatsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsTableViewCell.h; sourceTree = "<group>"; };
+		801027371B2A3DE60011B33E /* StatsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsTableViewCell.m; sourceTree = "<group>"; };
+		801027391B2A5C650011B33E /* wowFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wowFrame.png; sourceTree = "<group>"; };
+		802725E71B348132001A7996 /* Items.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Items.h; sourceTree = "<group>"; };
+		802725E81B348132001A7996 /* Items.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Items.m; sourceTree = "<group>"; };
+		802725EA1B348279001A7996 /* item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = item.h; sourceTree = "<group>"; };
+		802725EB1B348279001A7996 /* item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = item.m; sourceTree = "<group>"; };
+		802725EE1B349782001A7996 /* ItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailViewController.h; sourceTree = "<group>"; };
+		802725EF1B349782001A7996 /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
+		8040D6AA1B4AD5C700B80F58 /* OnlineChampionsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlineChampionsTableViewCell.h; sourceTree = "<group>"; };
+		8040D6AB1B4AD5C700B80F58 /* OnlineChampionsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnlineChampionsTableViewCell.m; sourceTree = "<group>"; };
+		8040D6AD1B4AD69400B80F58 /* NetworkedChampionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkedChampionsTableViewController.h; sourceTree = "<group>"; };
+		8040D6AE1B4AD69400B80F58 /* NetworkedChampionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkedChampionsTableViewController.m; sourceTree = "<group>"; };
+		8040D6B01B4AD6DC00B80F58 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		804342AD1B2B5BB1005BF974 /* FindFightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindFightViewController.h; sourceTree = "<group>"; };
+		804342AE1B2B5BB1005BF974 /* FindFightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindFightViewController.m; sourceTree = "<group>"; };
+		804342B01B2B60C0005BF974 /* BattleInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleInformation.h; sourceTree = "<group>"; };
+		804342B11B2B60C0005BF974 /* BattleInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BattleInformation.m; sourceTree = "<group>"; };
+		8043437D1B2F1B92005BF974 /* worn-paper-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "worn-paper-background.png"; sourceTree = "<group>"; };
+		804343851B2F39BA005BF974 /* bt3_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt3_active.png; sourceTree = "<group>"; };
+		804343861B2F39BA005BF974 /* bt3_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt3_hover.png; sourceTree = "<group>"; };
+		804343871B2F39BA005BF974 /* bt3_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt3_normal.png; sourceTree = "<group>"; };
+		804343991B2F50DB005BF974 /* find_user-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "find_user-32.png"; sourceTree = "<group>"; };
+		8043439A1B2F50DB005BF974 /* moderator-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "moderator-32.png"; sourceTree = "<group>"; };
+		8043439D1B2F5146005BF974 /* user_male2-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_male2-32.png"; sourceTree = "<group>"; };
+		8043439F1B2F52C0005BF974 /* realmPicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = realmPicker.png; sourceTree = "<group>"; };
+		804343A21B2F5468005BF974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		804343A41B2F565D005BF974 /* BattleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleViewController.h; sourceTree = "<group>"; };
+		804343A51B2F565D005BF974 /* BattleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BattleViewController.m; sourceTree = "<group>"; };
+		804343A91B2F67BD005BF974 /* BlackFrameMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlackFrameMask.png; sourceTree = "<group>"; };
+		804343AB1B2FB850005BF974 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		804343AC1B2FB850005BF974 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		804343B41B312DF3005BF974 /* testyour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testyour.png; sourceTree = "<group>"; };
+		804343B81B313044005BF974 /* might.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = might.png; sourceTree = "<group>"; };
+		804343BE1B3134BB005BF974 /* splashWorldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashWorldBG.png; sourceTree = "<group>"; };
+		807B47241B31E92A006FEDA4 /* bt12_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt12_hover.png; sourceTree = "<group>"; };
+		807B47261B31E934006FEDA4 /* bt10_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt10_active.png; sourceTree = "<group>"; };
+		807B47281B333165006FEDA4 /* CombatText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombatText.h; sourceTree = "<group>"; };
+		807B47291B333165006FEDA4 /* CombatText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombatText.m; sourceTree = "<group>"; };
+		807B472B1B339B2D006FEDA4 /* StatGroupSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatGroupSelectionView.h; sourceTree = "<group>"; };
+		807B472C1B339B2D006FEDA4 /* StatGroupSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatGroupSelectionView.m; sourceTree = "<group>"; };
+		808A99761B2B4B310075DC76 /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
+		808A99781B2B51E10075DC76 /* wowFrameFlipped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wowFrameFlipped.png; sourceTree = "<group>"; };
+		808A997A1B2B53FE0075DC76 /* Ability_warrior_charge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ability_warrior_charge.png; sourceTree = "<group>"; };
+		808A997E1B2B55D20075DC76 /* Ability_warrior_chargeO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ability_warrior_chargeO.png; sourceTree = "<group>"; };
+		80C7B2D91B4DD1AC009544FC /* WoW_TestYourProwess.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WoW_TestYourProwess.entitlements; sourceTree = "<group>"; };
+		80D06D761B3883140069ECB6 /* Page.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Page.wav; sourceTree = "<group>"; };
+		80D06D771B3883140069ECB6 /* HitSFX.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = HitSFX.wav; sourceTree = "<group>"; };
+		80D06D7A1B38867F0069ECB6 /* clicked.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clicked.wav; sourceTree = "<group>"; };
+		80D06D7B1B38867F0069ECB6 /* Fatality.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Fatality.wav; sourceTree = "<group>"; };
+		80E2099A1B399D0D00A642DA /* medieval.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medieval.png; sourceTree = "<group>"; };
+		80E2099C1B399D1400A642DA /* creator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = creator.png; sourceTree = "<group>"; };
+		80E2099E1B399D4600A642DA /* teamomega.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teamomega.png; sourceTree = "<group>"; };
+		80E209A01B39B66300A642DA /* btn_101.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_101.png; sourceTree = "<group>"; };
+		80E209A11B39B66300A642DA /* btn_102.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_102.png; sourceTree = "<group>"; };
+		80E209A21B39B66300A642DA /* btn_103.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_103.png; sourceTree = "<group>"; };
+		80E209A61B39F66F00A642DA /* SpalshScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SpalshScreen.storyboard; sourceTree = "<group>"; };
+		80E209A91B3A01BE00A642DA /* SplashScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashScreenViewController.h; sourceTree = "<group>"; };
+		80E209AA1B3A01BE00A642DA /* SplashScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashScreenViewController.m; sourceTree = "<group>"; };
+		80E209AC1B3A1A5400A642DA /* dead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dead.png; sourceTree = "<group>"; };
+		80E209AD1B3A1A5400A642DA /* dmg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dmg.png; sourceTree = "<group>"; };
+		80E209B01B3A1A5C00A642DA /* cracks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cracks.png; sourceTree = "<group>"; };
+		80E209B21B3AF54100A642DA /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		80E209B31B3AF54100A642DA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		80E209B51B3B0FCE00A642DA /* Harlem Shake.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Harlem Shake.wav"; sourceTree = "<group>"; };
+		80E209B81B3B2D7D00A642DA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		80E209B91B3B2D7D00A642DA /* icon87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon87.png; sourceTree = "<group>"; };
+		80E209BC1B3B2DD200A642DA /* icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon80.png; sourceTree = "<group>"; };
+		80E209BD1B3B2DD200A642DA /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		801026F31B29DF8D0011B33E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8040D6B11B4AD6DC00B80F58 /* MultipeerConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8010270C1B29DF8F0011B33E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		801026ED1B29DF8D0011B33E = {
+			isa = PBXGroup;
+			children = (
+				8040D6B01B4AD6DC00B80F58 /* MultipeerConnectivity.framework */,
+				801026F81B29DF8D0011B33E /* WoW_TestYourProwess */,
+				801027121B29DF8F0011B33E /* WoW_TestYourProwessTests */,
+				801026F71B29DF8D0011B33E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		801026F71B29DF8D0011B33E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				801026F61B29DF8D0011B33E /* WoW_TestYourProwess.app */,
+				8010270F1B29DF8F0011B33E /* WoW_TestYourProwessTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		801026F81B29DF8D0011B33E /* WoW_TestYourProwess */ = {
+			isa = PBXGroup;
+			children = (
+				80C7B2D91B4DD1AC009544FC /* WoW_TestYourProwess.entitlements */,
+				8040D6A91B4AD59D00B80F58 /* Network Documents */,
+				80E209A81B3A018E00A642DA /* Intro Screen View Controllers */,
+				804343B01B309F3F005BF974 /* StoryBoards */,
+				8010272A1B2A09190011B33E /* Main View Controllers */,
+				801026FD1B29DF8E0011B33E /* AppDelegate.h */,
+				801026FE1B29DF8F0011B33E /* AppDelegate.m */,
+				801027061B29DF8F0011B33E /* Images.xcassets */,
+				801026F91B29DF8E0011B33E /* Supporting Files */,
+			);
+			path = WoW_TestYourProwess;
+			sourceTree = "<group>";
+		};
+		801026F91B29DF8E0011B33E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80E209B71B3B0FD300A642DA /* Audio */,
+				801027231B29EEE10011B33E /* Images */,
+				801027221B29EED50011B33E /* Supporting Classes */,
+				801026FA1B29DF8E0011B33E /* Info.plist */,
+				801026FB1B29DF8E0011B33E /* main.m */,
+				80E209B21B3AF54100A642DA /* Reachability.h */,
+				80E209B31B3AF54100A642DA /* Reachability.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		801027121B29DF8F0011B33E /* WoW_TestYourProwessTests */ = {
+			isa = PBXGroup;
+			children = (
+				801027151B29DF8F0011B33E /* WoW_TestYourProwessTests.m */,
+				801027131B29DF8F0011B33E /* Supporting Files */,
+			);
+			path = WoW_TestYourProwessTests;
+			sourceTree = "<group>";
+		};
+		801027131B29DF8F0011B33E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				801027141B29DF8F0011B33E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		801027221B29EED50011B33E /* Supporting Classes */ = {
+			isa = PBXGroup;
+			children = (
+				802725ED1B34975C001A7996 /* Items */,
+				807B472E1B339BA7006FEDA4 /* Stat Group Selection */,
+				8010272C1B2A09920011B33E /* Character Stats Table */,
+				8010271F1B29E8260011B33E /* ArrayCreator.h */,
+				801027201B29E8260011B33E /* ArrayCreator.m */,
+				801027241B29F3250011B33E /* CharacterInformation.h */,
+				801027251B29F3250011B33E /* CharacterInformation.m */,
+				804342B01B2B60C0005BF974 /* BattleInformation.h */,
+				804342B11B2B60C0005BF974 /* BattleInformation.m */,
+				807B47281B333165006FEDA4 /* CombatText.h */,
+				807B47291B333165006FEDA4 /* CombatText.m */,
+			);
+			name = "Supporting Classes";
+			sourceTree = "<group>";
+		};
+		801027231B29EEE10011B33E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				80E209B81B3B2D7D00A642DA /* icon.png */,
+				80E209BC1B3B2DD200A642DA /* icon80.png */,
+				80E209BD1B3B2DD200A642DA /* icon120.png */,
+				80E209B91B3B2D7D00A642DA /* icon87.png */,
+				80E209B01B3A1A5C00A642DA /* cracks.png */,
+				80E209AC1B3A1A5400A642DA /* dead.png */,
+				80E209AD1B3A1A5400A642DA /* dmg.png */,
+				80E209A01B39B66300A642DA /* btn_101.png */,
+				80E209A11B39B66300A642DA /* btn_102.png */,
+				80E209A21B39B66300A642DA /* btn_103.png */,
+				807B47241B31E92A006FEDA4 /* bt12_hover.png */,
+				804343B41B312DF3005BF974 /* testyour.png */,
+				804343851B2F39BA005BF974 /* bt3_active.png */,
+				80E2099E1B399D4600A642DA /* teamomega.png */,
+				80E2099C1B399D1400A642DA /* creator.png */,
+				80E2099A1B399D0D00A642DA /* medieval.png */,
+				807B47261B31E934006FEDA4 /* bt10_active.png */,
+				804343861B2F39BA005BF974 /* bt3_hover.png */,
+				804343871B2F39BA005BF974 /* bt3_normal.png */,
+				804343BE1B3134BB005BF974 /* splashWorldBG.png */,
+				801027391B2A5C650011B33E /* wowFrame.png */,
+				808A99781B2B51E10075DC76 /* wowFrameFlipped.png */,
+				804343B81B313044005BF974 /* might.png */,
+				808A99761B2B4B310075DC76 /* mask.png */,
+				808A997A1B2B53FE0075DC76 /* Ability_warrior_charge.png */,
+				808A997E1B2B55D20075DC76 /* Ability_warrior_chargeO.png */,
+				8043437D1B2F1B92005BF974 /* worn-paper-background.png */,
+				8043439F1B2F52C0005BF974 /* realmPicker.png */,
+				804343A91B2F67BD005BF974 /* BlackFrameMask.png */,
+				804343991B2F50DB005BF974 /* find_user-32.png */,
+				8043439D1B2F5146005BF974 /* user_male2-32.png */,
+				8043439A1B2F50DB005BF974 /* moderator-32.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		8010272A1B2A09190011B33E /* Main View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				801027271B29F47B0011B33E /* CharacterPageViewController.h */,
+				801027281B29F47B0011B33E /* CharacterPageViewController.m */,
+				801027001B29DF8F0011B33E /* ViewController.h */,
+				801027011B29DF8F0011B33E /* ViewController.m */,
+				804342AD1B2B5BB1005BF974 /* FindFightViewController.h */,
+				804342AE1B2B5BB1005BF974 /* FindFightViewController.m */,
+				804343A41B2F565D005BF974 /* BattleViewController.h */,
+				804343A51B2F565D005BF974 /* BattleViewController.m */,
+				804343AB1B2FB850005BF974 /* LaunchViewController.h */,
+				804343AC1B2FB850005BF974 /* LaunchViewController.m */,
+			);
+			name = "Main View Controllers";
+			sourceTree = "<group>";
+		};
+		8010272C1B2A09920011B33E /* Character Stats Table */ = {
+			isa = PBXGroup;
+			children = (
+				801027331B2A10BB0011B33E /* StatsTableViewController.h */,
+				801027341B2A10BB0011B33E /* StatsTableViewController.m */,
+				801027361B2A3DE60011B33E /* StatsTableViewCell.h */,
+				801027371B2A3DE60011B33E /* StatsTableViewCell.m */,
+			);
+			name = "Character Stats Table";
+			sourceTree = "<group>";
+		};
+		802725ED1B34975C001A7996 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				802725E71B348132001A7996 /* Items.h */,
+				802725E81B348132001A7996 /* Items.m */,
+				802725EA1B348279001A7996 /* item.h */,
+				802725EB1B348279001A7996 /* item.m */,
+				802725EE1B349782001A7996 /* ItemDetailViewController.h */,
+				802725EF1B349782001A7996 /* ItemDetailViewController.m */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
+		8040D6A91B4AD59D00B80F58 /* Network Documents */ = {
+			isa = PBXGroup;
+			children = (
+				8040D6AA1B4AD5C700B80F58 /* OnlineChampionsTableViewCell.h */,
+				8040D6AB1B4AD5C700B80F58 /* OnlineChampionsTableViewCell.m */,
+				8040D6AD1B4AD69400B80F58 /* NetworkedChampionsTableViewController.h */,
+				8040D6AE1B4AD69400B80F58 /* NetworkedChampionsTableViewController.m */,
+			);
+			name = "Network Documents";
+			sourceTree = "<group>";
+		};
+		804343B01B309F3F005BF974 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				804343A11B2F5468005BF974 /* Main.storyboard */,
+				801027081B29DF8F0011B33E /* LaunchScreen.xib */,
+				80E209A61B39F66F00A642DA /* SpalshScreen.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		807B472E1B339BA7006FEDA4 /* Stat Group Selection */ = {
+			isa = PBXGroup;
+			children = (
+				807B472B1B339B2D006FEDA4 /* StatGroupSelectionView.h */,
+				807B472C1B339B2D006FEDA4 /* StatGroupSelectionView.m */,
+			);
+			name = "Stat Group Selection";
+			sourceTree = "<group>";
+		};
+		80E209A81B3A018E00A642DA /* Intro Screen View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				80E209A91B3A01BE00A642DA /* SplashScreenViewController.h */,
+				80E209AA1B3A01BE00A642DA /* SplashScreenViewController.m */,
+			);
+			name = "Intro Screen View Controllers";
+			sourceTree = "<group>";
+		};
+		80E209B71B3B0FD300A642DA /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				80D06D761B3883140069ECB6 /* Page.wav */,
+				80D06D771B3883140069ECB6 /* HitSFX.wav */,
+				80D06D7A1B38867F0069ECB6 /* clicked.wav */,
+				80D06D7B1B38867F0069ECB6 /* Fatality.wav */,
+				80E209B51B3B0FCE00A642DA /* Harlem Shake.wav */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		801026F51B29DF8D0011B33E /* WoW_TestYourProwess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 801027191B29DF8F0011B33E /* Build configuration list for PBXNativeTarget "WoW_TestYourProwess" */;
+			buildPhases = (
+				801026F21B29DF8D0011B33E /* Sources */,
+				801026F31B29DF8D0011B33E /* Frameworks */,
+				801026F41B29DF8D0011B33E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WoW_TestYourProwess;
+			productName = WoW_TestYourProwess;
+			productReference = 801026F61B29DF8D0011B33E /* WoW_TestYourProwess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8010270E1B29DF8F0011B33E /* WoW_TestYourProwessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8010271C1B29DF8F0011B33E /* Build configuration list for PBXNativeTarget "WoW_TestYourProwessTests" */;
+			buildPhases = (
+				8010270B1B29DF8F0011B33E /* Sources */,
+				8010270C1B29DF8F0011B33E /* Frameworks */,
+				8010270D1B29DF8F0011B33E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				801027111B29DF8F0011B33E /* PBXTargetDependency */,
+			);
+			name = WoW_TestYourProwessTests;
+			productName = WoW_TestYourProwessTests;
+			productReference = 8010270F1B29DF8F0011B33E /* WoW_TestYourProwessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		801026EE1B29DF8D0011B33E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Anton lopez";
+				TargetAttributes = {
+					801026F51B29DF8D0011B33E = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = YTABQD33G5;
+						SystemCapabilities = {
+							com.apple.OMC = {
+								enabled = 0;
+							};
+						};
+					};
+					8010270E1B29DF8F0011B33E = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 801026F51B29DF8D0011B33E;
+					};
+				};
+			};
+			buildConfigurationList = 801026F11B29DF8D0011B33E /* Build configuration list for PBXProject "WoW_TestYourProwess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 801026ED1B29DF8D0011B33E;
+			productRefGroup = 801026F71B29DF8D0011B33E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				801026F51B29DF8D0011B33E /* WoW_TestYourProwess */,
+				8010270E1B29DF8F0011B33E /* WoW_TestYourProwessTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		801026F41B29DF8D0011B33E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804343A01B2F52C0005BF974 /* realmPicker.png in Resources */,
+				808A997F1B2B55D20075DC76 /* Ability_warrior_chargeO.png in Resources */,
+				80E209B61B3B0FCE00A642DA /* Harlem Shake.wav in Resources */,
+				80D06D7D1B38867F0069ECB6 /* Fatality.wav in Resources */,
+				80E209AE1B3A1A5400A642DA /* dead.png in Resources */,
+				80E2099B1B399D0D00A642DA /* medieval.png in Resources */,
+				807B47271B31E934006FEDA4 /* bt10_active.png in Resources */,
+				808A99771B2B4B310075DC76 /* mask.png in Resources */,
+				80D06D791B3883140069ECB6 /* HitSFX.wav in Resources */,
+				804343B91B313044005BF974 /* might.png in Resources */,
+				80E209BB1B3B2D7D00A642DA /* icon87.png in Resources */,
+				8043439B1B2F50DB005BF974 /* find_user-32.png in Resources */,
+				80E209AF1B3A1A5400A642DA /* dmg.png in Resources */,
+				80E209BA1B3B2D7D00A642DA /* icon.png in Resources */,
+				80E209BE1B3B2DD200A642DA /* icon80.png in Resources */,
+				80E209A41B39B66300A642DA /* btn_102.png in Resources */,
+				804343891B2F39BA005BF974 /* bt3_hover.png in Resources */,
+				8043439E1B2F5146005BF974 /* user_male2-32.png in Resources */,
+				8043439C1B2F50DB005BF974 /* moderator-32.png in Resources */,
+				808A99791B2B51E10075DC76 /* wowFrameFlipped.png in Resources */,
+				80E209B11B3A1A5C00A642DA /* cracks.png in Resources */,
+				80E209BF1B3B2DD200A642DA /* icon120.png in Resources */,
+				80D06D7C1B38867F0069ECB6 /* clicked.wav in Resources */,
+				8043437E1B2F1B92005BF974 /* worn-paper-background.png in Resources */,
+				80D06D781B3883140069ECB6 /* Page.wav in Resources */,
+				804343881B2F39BA005BF974 /* bt3_active.png in Resources */,
+				80E209A71B39F66F00A642DA /* SpalshScreen.storyboard in Resources */,
+				80E209A31B39B66300A642DA /* btn_101.png in Resources */,
+				8010270A1B29DF8F0011B33E /* LaunchScreen.xib in Resources */,
+				804343BF1B3134BB005BF974 /* splashWorldBG.png in Resources */,
+				80E209A51B39B66300A642DA /* btn_103.png in Resources */,
+				801027071B29DF8F0011B33E /* Images.xcassets in Resources */,
+				804343B51B312DF3005BF974 /* testyour.png in Resources */,
+				804343A31B2F5468005BF974 /* Main.storyboard in Resources */,
+				80E2099D1B399D1400A642DA /* creator.png in Resources */,
+				807B47251B31E92A006FEDA4 /* bt12_hover.png in Resources */,
+				808A997B1B2B53FE0075DC76 /* Ability_warrior_charge.png in Resources */,
+				8043438A1B2F39BA005BF974 /* bt3_normal.png in Resources */,
+				8010273A1B2A5C650011B33E /* wowFrame.png in Resources */,
+				804343AA1B2F67BD005BF974 /* BlackFrameMask.png in Resources */,
+				80E2099F1B399D4600A642DA /* teamomega.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8010270D1B29DF8F0011B33E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		801026F21B29DF8D0011B33E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				802725F01B349782001A7996 /* ItemDetailViewController.m in Sources */,
+				802725EC1B348279001A7996 /* item.m in Sources */,
+				801027211B29E8260011B33E /* ArrayCreator.m in Sources */,
+				8040D6AC1B4AD5C700B80F58 /* OnlineChampionsTableViewCell.m in Sources */,
+				801027381B2A3DE60011B33E /* StatsTableViewCell.m in Sources */,
+				801027021B29DF8F0011B33E /* ViewController.m in Sources */,
+				804342AF1B2B5BB1005BF974 /* FindFightViewController.m in Sources */,
+				804343A61B2F565D005BF974 /* BattleViewController.m in Sources */,
+				801027351B2A10BB0011B33E /* StatsTableViewController.m in Sources */,
+				801026FF1B29DF8F0011B33E /* AppDelegate.m in Sources */,
+				807B472D1B339B2D006FEDA4 /* StatGroupSelectionView.m in Sources */,
+				80E209B41B3AF54100A642DA /* Reachability.m in Sources */,
+				804342B21B2B60C0005BF974 /* BattleInformation.m in Sources */,
+				80E209AB1B3A01BE00A642DA /* SplashScreenViewController.m in Sources */,
+				801027291B29F47B0011B33E /* CharacterPageViewController.m in Sources */,
+				8040D6AF1B4AD69400B80F58 /* NetworkedChampionsTableViewController.m in Sources */,
+				801027261B29F3250011B33E /* CharacterInformation.m in Sources */,
+				801026FC1B29DF8E0011B33E /* main.m in Sources */,
+				802725E91B348132001A7996 /* Items.m in Sources */,
+				804343AD1B2FB850005BF974 /* LaunchViewController.m in Sources */,
+				807B472A1B333165006FEDA4 /* CombatText.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8010270B1B29DF8F0011B33E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				801027161B29DF8F0011B33E /* WoW_TestYourProwessTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		801027111B29DF8F0011B33E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 801026F51B29DF8D0011B33E /* WoW_TestYourProwess */;
+			targetProxy = 801027101B29DF8F0011B33E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		801027081B29DF8F0011B33E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				801027091B29DF8F0011B33E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		804343A11B2F5468005BF974 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				804343A21B2F5468005BF974 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		801027171B29DF8F0011B33E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "a50c7d55-b1cc-46e8-8c6b-7269bc927a65";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		801027181B29DF8F0011B33E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "a50c7d55-b1cc-46e8-8c6b-7269bc927a65";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8010271A1B29DF8F0011B33E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Charles Kinder (EW4YN56HZY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = WoW_TestYourProwess/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a50c7d55-b1cc-46e8-8c6b-7269bc927a65";
+			};
+			name = Debug;
+		};
+		8010271B1B29DF8F0011B33E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Charles Kinder (EW4YN56HZY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = WoW_TestYourProwess/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a50c7d55-b1cc-46e8-8c6b-7269bc927a65";
+			};
+			name = Release;
+		};
+		8010271D1B29DF8F0011B33E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WoW_TestYourProwessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoW_TestYourProwess.app/WoW_TestYourProwess";
+			};
+			name = Debug;
+		};
+		8010271E1B29DF8F0011B33E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WoW_TestYourProwessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoW_TestYourProwess.app/WoW_TestYourProwess";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		801026F11B29DF8D0011B33E /* Build configuration list for PBXProject "WoW_TestYourProwess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				801027171B29DF8F0011B33E /* Debug */,
+				801027181B29DF8F0011B33E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		801027191B29DF8F0011B33E /* Build configuration list for PBXNativeTarget "WoW_TestYourProwess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8010271A1B29DF8F0011B33E /* Debug */,
+				8010271B1B29DF8F0011B33E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8010271C1B29DF8F0011B33E /* Build configuration list for PBXNativeTarget "WoW_TestYourProwessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8010271D1B29DF8F0011B33E /* Debug */,
+				8010271E1B29DF8F0011B33E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 801026EE1B29DF8D0011B33E /* Project object */;
+}
