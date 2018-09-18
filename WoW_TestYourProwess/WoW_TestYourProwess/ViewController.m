@@ -104,10 +104,10 @@
         }
         [picker_RealmList selectRow:nSelectedRealmRow inComponent:0 animated:YES];
        
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"LOAD_CHAR" object:charInfo];
+      //  [[NSNotificationCenter defaultCenter] postNotificationName:@"LOAD_CHAR" object:charInfo];
         
         ////// switch to the character information tab
-        [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(changeTab) userInfo:nil repeats:NO];
+      //  [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(changeTab) userInfo:nil repeats:NO];
         return;
     }
     

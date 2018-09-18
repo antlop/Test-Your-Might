@@ -270,9 +270,6 @@
     [enhancements setObject:[stats objectForKey:@"crit"] forKey:@"Crit"];
     [enhancements setObject:[stats objectForKey:@"haste"] forKey:@"Haste"];
     [enhancements setObject:[stats objectForKey:@"mastery"] forKey:@"Mastery"];
-    [enhancements setObject:[stats objectForKey:@"spr"] forKey:@"Spirit"];
-    [enhancements setObject:[stats objectForKey:@"bonusArmor"] forKey:@"Bonus Armor"];
-    [enhancements setObject:[stats objectForKey:@"multistrike"] forKey:@"Multistrike"];
     [enhancements setObject:[stats objectForKey:@"leech"] forKey:@"Leech"];
     [enhancements setObject:[stats objectForKey:@"versatility"] forKey:@"Versatility"];
     [enhancements setObject:[stats objectForKey:@"avoidanceRatingBonus"] forKey:@"Avoidance"];
@@ -292,14 +289,11 @@
     [attacks setObject:[stats objectForKey:@"rangedDmgMin"] forKey:@"Ranged Min Dmg"];
     [attacks setObject:[stats objectForKey:@"rangedDmgMax"] forKey:@"Ranged Max Dmg"];
     [attacks setObject:[stats objectForKey:@"rangedSpeed"] forKey:@"Ranged Speed"];
-    [attacks setObject:[stats objectForKey:@"attackPower"] forKey:@"Attack Power"];
-    [attacks setObject:[stats objectForKey:@"rangedAttackPower"] forKey:@"Ranged Power"];
     
     
     // spell Stats
     NSMutableDictionary* spells = [[NSMutableDictionary alloc] init];
     
-    [spells setObject:[stats objectForKey:@"spellPower"] forKey:@"Spell Power"];
     [spells setObject:[stats objectForKey:@"mana5"] forKey:@"Mana Regen"];
     [spells setObject:[stats objectForKey:@"mana5Combat"] forKey:@"Combat Regen"];
     

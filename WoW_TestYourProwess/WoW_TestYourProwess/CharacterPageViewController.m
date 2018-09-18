@@ -135,7 +135,7 @@
     grpSelectionButton.enabled = YES;
     
     // Create the base string with the two components needed to access the API
-    NSString* apperanceRequestString = [NSString stringWithFormat:@"https://us.api.battle.net/wow/character/%@/%@?fields=stats&locale=en_US&apikey=4ftynxb7jpr8bjzjgfmgt55v7puvzw3n", [myCharacter getRealmName], [myCharacter getCharName]];
+    NSString* apperanceRequestString = [NSString stringWithFormat:@"https://us.api.battle.net/wow/character/%@/%@?fields=stats&locale=en_US&apikey=e3jfrwhxhgj4d2y9szwcs3nnrj9h2vqb", [myCharacter getRealmName], [myCharacter getCharName]];
     
     // create a url from the string above while replacing the spaces
     NSURLRequest* characterApperanceRequestURL = [NSURLRequest requestWithURL:[NSURL URLWithString:[apperanceRequestString stringByReplacingOccurrencesOfString:@" " withString:@"%20"]]];
@@ -146,7 +146,7 @@
     }];
     
     //// this will get the characters specilization
-    NSString* specRequestString = [NSString stringWithFormat:@"https://us.api.battle.net/wow/character/%@/%@?fields=talents&locale=en_US&apikey=4ftynxb7jpr8bjzjgfmgt55v7puvzw3n", [myCharacter getRealmName], [myCharacter getCharName]];
+    NSString* specRequestString = [NSString stringWithFormat:@"https://us.api.battle.net/wow/character/%@/%@?fields=talents&locale=en_US&apikey=e3jfrwhxhgj4d2y9szwcs3nnrj9h2vqb", [myCharacter getRealmName], [myCharacter getCharName]];
     
     NSURLRequest* charSpecRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:[specRequestString stringByReplacingOccurrencesOfString:@" " withString:@"%20"]]];
     
@@ -156,7 +156,7 @@
     
     
     //// this will get the characters items
-    NSString* itemsequestString = [NSString stringWithFormat:@"https://us.api.battle.net/wow/character/%@/%@?fields=items&locale=en_US&apikey=4ftynxb7jpr8bjzjgfmgt55v7puvzw3n", [myCharacter getRealmName], [myCharacter getCharName]];
+    NSString* itemsequestString = [NSString stringWithFormat:@"https://us.api.battle.net/wow/character/%@/%@?fields=items&locale=en_US&apikey=e3jfrwhxhgj4d2y9szwcs3nnrj9h2vqb", [myCharacter getRealmName], [myCharacter getCharName]];
     
     NSURLRequest* charItemsRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:[itemsequestString stringByReplacingOccurrencesOfString:@" " withString:@"%20"]]];
     
@@ -281,7 +281,7 @@
 {
     ////// THUMBNAIL //////
     // path for the thumbnail image
-    NSString* thumbnailQueryURL = [NSString stringWithFormat:@"http://us.battle.net/static-render/us/%@", path];
+    NSString* thumbnailQueryURL = [NSString stringWithFormat:@"http://render-us.worldofwarcraft.com/character/%@", path];
     
     // we now have a thumbnail
     NSData* d = [NSData dataWithContentsOfURL:[NSURL URLWithString:thumbnailQueryURL]];
@@ -291,7 +291,7 @@
     ////// CHARACTER SCREEN CAP //////
     // switch string from thumbnail to profilemain
     NSString* sz = [path stringByReplacingOccurrencesOfString:@"avatar" withString:@"profilemain"];
-    NSString* profileQueryURL = [NSString stringWithFormat:@"http://us.battle.net/static-render/us/%@", sz];
+    NSString* profileQueryURL = [NSString stringWithFormat:@"http://render-us.worldofwarcraft.com/character/%@", sz];
     
     NSURLRequest* imgRequestURL = [NSURLRequest requestWithURL:[NSURL URLWithString:profileQueryURL]];
     
@@ -299,7 +299,15 @@
     //      then call the return method on the main thread
     [NSURLConnection sendAsynchronousRequest:imgRequestURL queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         [self performSelectorOnMainThread:@selector(setProfileImage:) withObject:data waitUntilDone:YES];
+        
+        if(connectionError) {
+            NSLog(@"%@", [connectionError localizedDescription]);
+        }
+        
     }];
+    
+    NSData* da = [[NSData alloc ] initWithContentsOfURL:[NSURL URLWithString:sz]];
+    imageProfileMain.image = [UIImage imageWithData:da];
 }
 
 -(void)setNameOfCharacterLabel

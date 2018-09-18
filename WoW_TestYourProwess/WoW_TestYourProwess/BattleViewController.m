@@ -100,7 +100,7 @@
     // throw on sepearte thread
     //[self loadOpponantCharacterInformation:realmName];
     
-    NSString* apperanceRequestString = [NSString stringWithFormat:@"https://us.api.battle.net/wow/character/%@/%@?fields=stats&locale=en_US&apikey=4ftynxb7jpr8bjzjgfmgt55v7puvzw3n", [_myOpponantInfo getRealmName], [_myOpponantInfo getCharName]];
+    NSString* apperanceRequestString = [NSString stringWithFormat:@"https://us.api.battle.net/wow/character/%@/%@?fields=stats&locale=en_US&apikey=e3jfrwhxhgj4d2y9szwcs3nnrj9h2vqb", [_myOpponantInfo getRealmName], [_myOpponantInfo getCharName]];
     
     // create a url from the string above while replacing the spaces
     NSURLRequest* characterApperanceRequestURL = [NSURLRequest requestWithURL:[NSURL URLWithString:[apperanceRequestString stringByReplacingOccurrencesOfString:@" " withString:@"%20"]]];
@@ -110,7 +110,7 @@
     }];
     
     //// this will get the characters specilization
-    NSString* specRequestString = [NSString stringWithFormat:@"https://us.api.battle.net/wow/character/%@/%@?fields=talents&locale=en_US&apikey=4ftynxb7jpr8bjzjgfmgt55v7puvzw3n", [_myOpponantInfo getRealmName], [_myOpponantInfo getCharName]];
+    NSString* specRequestString = [NSString stringWithFormat:@"https://us.api.battle.net/wow/character/%@/%@?fields=talents&locale=en_US&apikey=e3jfrwhxhgj4d2y9szwcs3nnrj9h2vqb", [_myOpponantInfo getRealmName], [_myOpponantInfo getCharName]];
     
     NSURLRequest* charSpecRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:[specRequestString stringByReplacingOccurrencesOfString:@" " withString:@"%20"]]];
     
